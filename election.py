@@ -21,6 +21,7 @@ c=conn.cursor()
 
 '''The following is the code for voting'''
 def voted1():
+
     cursor10 = conn.execute("SELECT total_vote_given from vote_result where sl_no=1")
     for row in cursor10:
         number = str(row[0])
